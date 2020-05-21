@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const fetch = require("node-fetch");
 require('dotenv').config();
-const OWM_API_KEY = process.env.OWM_API_KEY || 'invalid_key';
-const UNITS = process.env.UNITS || 'metric';
+const OWM_API_KEY = process.env.OWM_API_KEY || 'invalid_key'; //api key:9f0938d0f6994344b54eee954ca7644a
+const UNITS = process.env.UNITS || 'metric'; // imperial for degeerated units
 
 /* GET home page. */
 router.get('/', function(req, res) {
